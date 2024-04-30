@@ -6,6 +6,8 @@
     <title>Plant care</title>
     <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,21 +15,25 @@
             <div class="mb-3">
                 <label for="plant-name" class="form-label">What is the name of the plant?</label>
                 <input type="text" class="form-control" id="plant-name">
+                <span class="error-msg"></span>
             </div>
 
             <div class="mb-3">
                 <label for="plant-type" class="form-label">What type of plant is it? ex. succulent, tree, flower</label>
                 <input type="text" class="form-control" id="plant-type">
+                <span class="error-msg"></span>
             </div>
 
             <div class="mb-3">
                 <label for="watering-needs" class="form-label">How often does this plant need to be watered?</label>
                 <input type="text" class="form-control" id="watering-needs">
+                <span class="error-msg"></span>
             </div>
 
             <div class="mb-3">
                 <label for="sunlight-needs" class="form-label">How much sunlight does this plant need? ex. direct, indirect, partial</label>
                 <input type="text" class="form-control" id="sunlight-needs">
+                <span class="error-msg"></span>
             </div>
 
             <button type="button" class="btn btn-primary" id="add-plant">Submit plant</button>
